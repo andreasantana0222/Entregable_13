@@ -1,0 +1,30 @@
+{
+  "name": "entregable_13",
+  "version": "1.0.0",
+  "description": "Chat con Winsock",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreasantana0222/Entregable_13.git"
+  },
+  "engines": {
+  "node": ">=14.0.0",
+  "npm": ">=6.0.0"
+  }
+  "author": "Andrea Santana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreasantana0222/Entregable_13/issues"
+  },
+  "homepage": "https://github.com/andreasantana0222/Entregable_13#readme"
+}

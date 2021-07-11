@@ -1,0 +1,33 @@
+<style>
+
+    h1 {
+        color: blue;
+    }
+    label{
+      font-style: italic;
+    }
+
+</style>
+<h1>Ingrese Producto</h1>
+
+
+
+<form action="/api/productos/guardar" method="POST">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nombre del Producto</label>
+    <input type="text" class="form-control" id="nombreProducto" aria-describedby="nombreProducto" name="title">
+    <div id="nombreProductoDIV" class="form-text">Ejemplo: Calculadora</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Precio</label>
+    <input type="text" class="form-control" id="nombreProducto" aria-describedby="nombreProducto" name="price">
+    <div id="nombreProductoDIV" class="form-text">Ejemplo: 100.35</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Foto URL:</label>
+    <input type="text" class="form-control" id="nombreProducto" aria-describedby="nombreProducto" name="thumbnail">
+    <div id="nombreProductoDIV" class="form-text">Ejemplo: https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png</div>
+  </div>
+
+  <button type="submit" class="btn btn-success">Enviar</button>
+</form>

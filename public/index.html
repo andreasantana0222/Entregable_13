@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ingreso de Productos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="container mt-3 jumbotron">
+        <h2 style="color: blue">Ingrese Producto</h2>
+        <form id="formulario">
+            <div class="form-group">
+                Nombre: <input id="input-title" class="form-control" type="text" name="title">
+                Precio: <input id="input-price" class="form-control" type="text" name="price">
+                Foto URL: <input id="input-img" class="form-control" type="text" name="thumbnail">
+                <button class="btn btn-success mt-3">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div id="lista-productos" class="container jumbotron">
+
+    </div>
+
+    <h1>Mi chat</h1>
+
+    <form onsubmit="return addMessage(this)">
+    <input type="text" id="username" placeholder="Tu Nombre">
+    <input type="text" id="email" placeholder="Tu Email" required>
+    <input type="text" id="texto" placeholder="Cuéntanos algo...">
+    <input type="submit" value="Enviar">
+    </form>
+    <div id="messages"></div>
+    <br>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="js/handlebars-v4.7.6.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

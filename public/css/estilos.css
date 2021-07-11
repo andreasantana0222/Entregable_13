@@ -1,0 +1,16 @@
+h1 {
+    color: blue;
+}
+
+label {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.table td, .table th {
+       vertical-align: middle;
+   }
+
+   .jumbotron {
+       min-height: 100vh;
+   }
